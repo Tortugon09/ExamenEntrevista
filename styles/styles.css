@@ -1,0 +1,36 @@
+.textColorPrimary{
+    color: #747474;
+    font-family: Arial, serif;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+}
+.textColorSecundary {
+    color: #747474;
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+/*--------Header----------*/
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25%;
+}
+header .userBox {
+    display: flex;
+}
+header .userBox .userInfoBox {
+    display: flex;
+}
+header .userBox .userInfoBox {
+    display: flex;
+}
