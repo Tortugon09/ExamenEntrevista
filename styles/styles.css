@@ -1,36 +1,305 @@
 .textColorPrimary{
     color: #747474;
-    font-family: Arial, serif;
-    font-style: normal;
-    line-height: normal;
+    font-family: "Poppins", serif;
+    font-weight: 400;
     margin: 0;
+    font-size: 1em;
 }
 .textColorSecundary {
     color: #747474;
     font-weight: 700;
+    margin: 0;
+    font-size: 1em;
 }
 
 body {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    background: #F4F6F9;
+}
+
+.icon {
+    font-size: 2em;
+    color: #747474;
+}
+
+p {
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+.containerHeaderSide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
 }
 
 /*--------Header----------*/
 
 header {
     width: 100%;
+    height: 150px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding:0% 8% 0% 8%;
     align-items: center;
-    gap: 25%;
+    box-sizing: border-box;
+}
+header  .tittles h1 {
+    margin-bottom: 2%;
+    font-size: 3em;
+}
+header  .tittles h3 {
+    font-size: 1.2em;
+}
+header .search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 43.3%;
+}
+header .search input{
+    width: 60%;
+    height: 30px;
+    border: none;
+
 }
 header .userBox {
     display: flex;
+    align-items: center;
+}
+header .boxProprieties {
+    background: #ffffff;
+    border-radius: 11rem;
+    padding: 1em;
+}
+header .userBox .notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    border-radius: 90%;
+    width: 34px;
+    height: 24px;
 }
 header .userBox .userInfoBox {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20%;
 }
-header .userBox .userInfoBox {
+header .userBox .userInfoBox .userName{
+    font-size: 1rem;
+}
+header .userBox .userInfoBox .rolUser{
+    font-size: 0.7rem;
+}
+header .userBox .userNamesBox {
     display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+    margin-left: 15%;
+}
+.search i {
+    position: absolute;
+    top: 50%;
+    right: 22%;
+    font-size: 2em;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+}
+/*---------------Sidebar-------------------*/
+
+aside {
+    background: #232D48;
+    width: 15%;
+    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0em 0em 4em 0em;
+}
+aside .configurationNav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside ul h3 {
+    color: #ffffff;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 1px #ffffff solid;
+}
+aside ul{
+    list-style: none;
+}
+aside ul li {
+    padding: 1em;
+    margin: 1em;
+    transition: 0.1s ease all;
+}
+aside a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, serif;
+    font-style: normal;
+    font-size: 1em;
+    line-height: normal;
+    text-decoration: none;
+    color: #ffffff;
+}
+aside .itemNav:hover {
+    border-radius: 11.21875rem;
+    background: rgba(255, 255, 255, 0.31);
+}
+aside i{
+    font-size: 1.3em ;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+/*--------------------------------------------Main--------------------------------------------------*/
+
+/*------------------PercentagesBoxs----------------------*/
+main .percentagesSection .containerBoxPercentages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0% 8% 0% 8%;
+}
+main .percentagesSection .boxPercentages div div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5em;
+}
+main .percentagesSection .boxPercentages .textsAndIcon {
+    display: flex;
+    height: 100%;
+    padding: 1.5em 1.5em 0em 1.5em;
+    justify-content: center;
+}
+main .percentagesSection .boxPercentages div h3{
+    font-size: 1.5em;
+}
+main .percentagesSection .boxPercentages .linePercentage{
+    width: 100%;
+    height: 10px;
+}
+main .percentagesSection .boxPercentages p i{
+    font-size: 4em;
+    color: #BBBBBB
+}
+main .percentagesSection .boxPercentages {
+    display: flex;
+    min-width: 18%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: #ffffff;
+    margin-top: 1.5em;
+    padding: 1em 1em 0em 1em;
+    border-radius: 1.75rem;
+}
+main .percentagesSection .boxPercentages .colorLinePrimary {
+    border-bottom: #9FAABD solid 4px;
+}
+main .percentagesSection .boxPercentages .colorLineSecondary {
+    border-bottom: #B2D6E7 solid 4px;
+}
+
+/*--------------ChartMain------------------*/
+main .chartSection{
+    width: 100%;
+}
+
+main .chartSection .boxChart {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 1.75rem;
+    margin: 2% 8% 2% 8%;
+    padding: 3%;
+}
+main .chartSection .boxChart .tittlesChart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #9FAABD solid 1px;
+    padding-bottom: 1%;
+    margin-bottom: 5%;
+}
+
+/*---------------FooterSection----------------*/
+
+main .footerSection .informationSectionForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0% 8% 0% 8%;
+}
+main .footerSection .informationSectionForm .listForms{
+    background: #ffffff;
+    border-radius: 1.75rem;
+    padding: 3%;
+}
+main .footerSection .informationSectionForm .listForms .lists{
+    display: flex;
+    align-items: center;
+}
+main .footerSection .informationSectionForm .listForms .lists ul{
+    list-style-position: inside;
+    margin-right: 20px;
+}
+main .footerSection .informationSectionForm .listForms h5{
+    padding-bottom: 0.5em;
+    margin-right: 1.5em;
+    border-bottom: #747474 solid 1px;
+}
+main .footerSection .informationSectionForm .listForms .lists .lineList{
+    height: 80px;
+    width: 10px;
+    margin-right: 1.5em;
+    border-right: #747474 solid 1px;
+}
+main .footerSection .informationSectionForm .listForms .lists ul .listPrimary{
+    list-style-image: url("EllipsePrimary.svg");
+}
+main .footerSection .informationSectionForm .listForms .lists ul .listSecondary{
+    list-style-image: url("EllipseSecondary.svg");
+}
+main .footerSection .informationSectionForm .boxInformation{
+    background: #ffffff;
+    border-radius: 1.75rem;
+    padding: 3%;
+}
+main .footerSection .informationSectionForm .boxInformation h5{
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+    margin-right: 1.5em;
+    border-bottom: #747474 solid 1px;
+}
+main .footerSection .informationSectionForm .boxInformation div {
+    display: flex;
+}
+main .footerSection .informationSectionForm .boxInformation div p{
+    font-size: 3em;
+    margin: 0.3em;
+}
+main .footerSection .informationSectionForm .boxInformation div .colorIconPrimary{
+    color: #485C93;
+}
+main .footerSection .informationSectionForm .boxInformation div .colorIconSecondary{
+    color: #5482AA;
 }
