@@ -12,14 +12,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/responsive.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="scripts/scripts.js"></script>
         <title>Dashboard Examen</title>
     </head>
     <body>
-        <aside>
+        <aside id="menu">
             <nav>
                 <ul>
+                    <li onclick="toggleMenu()" class="itemNav responsiveMenuList">
+                        <a href="#"><i class="bi bi-x-lg"></i>Close Menu</a>
+                    </li>
                     <li class="itemNav">
                         <a href="#"><i class="bi bi-grid-fill"></i>Dashboard</a>
                     </li>
@@ -57,6 +61,9 @@
         </aside>
         <div class="containerHeaderSide">
             <header>
+                <div onclick="toggleMenu()" class="responsiveMenu">
+                    <i class="bi bi-list"></i>
+                </div>
                 <div class="boxHeader tittles">
                     <h1 class="textColorPrimary">Dashboard</h1>
                     <h3 class="textColorPrimary">!Hola, Bienvenido a!</h3>
@@ -95,7 +102,7 @@
                         <div class="boxPercentages">
                             <div class="textsAndIcon">
                                 <div>
-                                    <h3 class="textColorPrimary">On boarding</h3>
+                                    <h3 class="textColorPrimary">Legajos Digitales</h3>
                                     <p class="textColorPrimary">16 %</p>
                                 </div>
                                 <p><i class="bi bi-files"></i></p>
@@ -105,7 +112,7 @@
                         <div class="boxPercentages">
                             <div class="textsAndIcon">
                                 <div>
-                                    <h3 class="textColorPrimary">On boarding</h3>
+                                    <h3 class="textColorPrimary">Comunicaciones</h3>
                                     <p class="textColorPrimary">16 %</p>
                                 </div>
                                 <p><i class="bi bi-people"></i></p>
@@ -115,7 +122,7 @@
                         <div class="boxPercentages">
                             <div class="textsAndIcon">
                                 <div>
-                                    <h3 class="textColorPrimary">On boarding</h3>
+                                    <h3 class="textColorPrimary">Planificacion</h3>
                                     <p class="textColorPrimary">16 %</p>
                                 </div>
                                 <p><i class="bi bi-clock-history"></i></p>

@@ -32,11 +32,14 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding:0% 8% 0% 8%;
 }
 h1, h2, h3, h4, h5 {
     margin: 0;
 }
-
+.responsiveMenuList{
+    display: none;
+}
 /*--------Header----------*/
 
 header {
@@ -45,9 +48,19 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:0% 8% 0% 8%;
     align-items: center;
     box-sizing: border-box;
+}
+header .responsiveMenu{
+    display: none;
+    align-items: center;
+    background: #232D48;
+    height: 100%;
+    cursor: pointer;
+}
+header .responsiveMenu i{
+    font-size: 3em;
+    color: #ffffff;
 }
 header  .tittles h1 {
     margin-bottom: 2%;
@@ -177,7 +190,6 @@ main .percentagesSection .containerBoxPercentages {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:0% 8% 0% 8%;
 }
 main .percentagesSection .boxPercentages div div{
     display: flex;
@@ -191,7 +203,7 @@ main .percentagesSection .boxPercentages .textsAndIcon {
     justify-content: center;
 }
 main .percentagesSection .boxPercentages div h3{
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 main .percentagesSection .boxPercentages .linePercentage{
     width: 100%;
@@ -229,7 +241,7 @@ main .chartSection .boxChart {
     flex-direction: column;
     background: #ffffff;
     border-radius: 1.75rem;
-    margin: 2% 8% 2% 8%;
+    margin: 2% 0% 2% 0%;
     padding: 3%;
 }
 main .chartSection .boxChart .tittlesChart {
@@ -247,7 +259,6 @@ main .footerSection .informationSectionForm {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:0% 8% 0% 8%;
 }
 main .footerSection .informationSectionForm .listForms{
     background: #ffffff;

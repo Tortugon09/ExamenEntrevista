@@ -1,4 +1,11 @@
-
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
 document.addEventListener('DOMContentLoaded', function() {
     var labels = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'];
     var data = [10, 5, 8, 12, 7];

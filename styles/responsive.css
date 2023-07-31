@@ -1,0 +1,78 @@
+@media screen and (max-width: 1600px) {
+    .textColorPrimary{
+        color: #747474;
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        margin: 0;
+        font-size: 1em;
+    }
+    main .percentagesSection .boxPercentages div h3{
+        font-size: 1em;
+    }
+    main .percentagesSection .boxPercentages p i{
+        font-size: 2.5em;
+        color: #BBBBBB
+    }
+    main .footerSection .informationSectionForm .boxInformation h5{
+        font-size: 0.8em;
+        padding-bottom: 0.5em;
+        margin-right: 1.5em;
+        border-bottom: #747474 solid 1px;
+    }
+    main .footerSection .informationSectionForm .boxInformation div {
+        display: flex;
+    }
+    main .footerSection .informationSectionForm .boxInformation div p{
+        font-size: 3em;
+        margin: 0.3em;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    main .percentagesSection .boxPercentages {
+        max-width: 150px;
+    }
+    .textColorPrimary{
+        font-size: 0.5em;
+    }
+    main .percentagesSection .boxPercentages div h3{
+        font-size: 0.5em;
+    }
+    main .percentagesSection .boxPercentages p i{
+        font-size: 1.5em;
+    }
+    main .percentagesSection .boxPercentages .textsAndIcon {
+        padding: 0.5em 0.5em 0em 0.5em;
+    }
+    main .percentagesSection .boxPercentages {
+        padding: 0.5em 0.5em 0em 0.5em;
+
+    }
+    main .percentagesSection .boxPercentages .linePercentage{
+        width: 80%;
+    }
+    main .percentagesSection .boxPercentages .colorLinePrimary {
+        border-bottom: #9FAABD solid 2px;
+    }
+    main .percentagesSection .boxPercentages .colorLineSecondary {
+        border-bottom: #B2D6E7 solid 2px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .containerHeaderSide {
+        padding: 0%;
+    }
+    .responsiveMenuList{
+        display: flex;
+    }
+    header .responsiveMenu{
+        display: flex;
+    }
+    aside {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+    }
+}
