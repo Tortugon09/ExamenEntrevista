@@ -23,12 +23,13 @@
         display: flex;
     }
     main .footerSection .informationSectionForm .boxInformation div p{
-        font-size: 3em;
-        margin: 0.3em;
-    }
-    main .footerSection .informationSectionForm .boxInformation div p{
         font-size: 2em;
-        margin: 0.3em;
+    }
+    main .footerSection .informationSectionForm .boxInformation{
+        padding: 2%;
+    }
+    main .footerSection .informationSectionForm .listForms{
+        padding: 2%;
     }
 }
 
